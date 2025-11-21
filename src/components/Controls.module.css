@@ -1,0 +1,202 @@
+.controlsContainer {
+  padding: 16px 20px;
+  background: var(--bg-primary);
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.topControls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dropdownWrapper {
+  position: relative;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdownButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-primary);
+  transition: all 0.2s;
+  white-space: nowrap;
+  min-width: 140px;
+  justify-content: space-between;
+}
+
+.dropdownButton:hover {
+  background: var(--bg-primary);
+  border-color: var(--accent-color);
+}
+
+.dropdownArrow {
+  font-size: 10px;
+  opacity: 0.6;
+  transition: transform 0.2s;
+}
+
+.dropdownButton:hover .dropdownArrow {
+  transform: translateY(2px);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  min-width: 100%;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  overflow: hidden;
+  animation: slideDown 0.2s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--text-primary);
+  transition: background 0.2s;
+}
+
+.dropdownItem:hover {
+  background: var(--bg-secondary);
+}
+
+.dropdownItem.active {
+  background: var(--accent-color);
+  color: white;
+}
+
+.dropdownItem input[type='checkbox'] {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.dropdownItem:has(input:disabled) {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.iconButtons {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--text-primary);
+  transition: all 0.2s;
+}
+
+.iconButton:hover:not(:disabled) {
+  background: var(--accent-color);
+  color: white;
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.iconButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+@media (max-width: 900px) {
+  .controlsContainer {
+    padding: 12px 16px;
+  }
+
+  .topControls {
+    gap: 8px;
+  }
+
+  .dropdownButton {
+    padding: 6px 12px;
+    font-size: 13px;
+    min-width: 120px;
+  }
+
+  .iconButton {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 671px) {
+  .controlsContainer {
+    padding: 10px 12px;
+  }
+
+  .topControls {
+    gap: 6px;
+  }
+
+  .dropdownButton {
+    padding: 6px 10px;
+    font-size: 12px;
+    min-width: 100px;
+  }
+
+  .dropdownItem {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .iconButton {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .iconButtons {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

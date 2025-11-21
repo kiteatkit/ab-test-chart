@@ -1,0 +1,107 @@
+.app {
+  min-height: 100vh;
+  padding: 20px;
+  background: var(--bg-app);
+  transition: background 0.3s;
+}
+
+.container {
+  max-width: 1300px;
+  min-width: 671px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 8px 0;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  font-size: 18px;
+  color: var(--text-secondary);
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  padding: 20px;
+}
+
+.errorTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ff4444;
+  margin: 0 0 8px 0;
+}
+
+.errorMessage {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+@media (max-width: 1300px) {
+  .app {
+    padding: 16px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  .app {
+    padding: 12px;
+  }
+
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 671px) {
+  .container {
+    min-width: auto;
+  }
+
+  .app {
+    padding: 8px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+}
