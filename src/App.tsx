@@ -19,20 +19,11 @@ function App() {
     { x?: [number, number]; y?: [number, number] } | undefined
   >();
   const [chartKey, setChartKey] = useState(0);
-  const [isFullscreen, setIsFullscreen] = useState(false);
   const [dataZoomRange, setDataZoomRange] = useState<{ start: number; end: number }>({ start: 0, end: 100 });
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
-
-  useEffect(() => {
-    const handleFullscreenChange = () => {
-      setIsFullscreen(!!document.fullscreenElement);
-    };
-    document.addEventListener('fullscreenchange', handleFullscreenChange);
-    return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
-  }, []);
 
   const processedData = useMemo<ProcessedDataPoint[]>(() => {
     if (timeRange === 'week') {
