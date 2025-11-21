@@ -11,7 +11,7 @@ https://kiteatkit.github.io/ab-test-chart/
 ### Installation
 
 #### Prerequisites
-- Node.js 18+ and npm installed on your machine
+- Node.js 18+ and npm installed on PC
 
 ---
 
@@ -31,7 +31,7 @@ npm install
 npm run dev
 ```
 
-4. Open your browser and navigate to:
+4. Open browser and navigate to:
 ```
 http://localhost:5173
 ```
