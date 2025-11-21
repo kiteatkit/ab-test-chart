@@ -170,7 +170,7 @@ function App() {
           onThemeToggle={handleThemeToggle}
           onExport={handleExport}
           onZoomReset={handleZoomReset}
-          hasZoom={!!zoomDomain}
+          hasZoom={!!zoomDomain || dataZoomRange.start !== 0 || dataZoomRange.end !== 100}
           onZoomIn={handleZoomIn}
           onZoomOut={handleZoomOut}
           onFullscreen={handleFullscreen}
