@@ -1,5 +1,14 @@
+## Visualization Library
+
+*Recharts* -- a composable charting library built on React components.
+
 ---
 ### Installation
+
+#### Prerequisites
+- Node.js 18+ and npm installed on your machine
+
+---
 
 1. Clone the repository:
 ```bash
@@ -23,17 +32,47 @@ http://localhost:5173
 ```
 ---
 
+### Core Features
+- [ ] *Multiple variation comparison* - display and compare multiple A/B test variations simultaneously
+- [ ] *Time range switching* - toggle between daily and weekly data aggregation
+- [ ] *Interactive legend* - click to show/hide specific variations (minimum one variation always visible)
+- [ ] *Responsive design* - responsive layout that adapts to different screen sizes
+
+---
+
+### Bonus Features
+
+- [ ] Zoom / Reset zoom
+- [ ] Line style selector (Line, Smooth, Area)
+- [ ] Light / Dark theme toggle
+- [ ] Export chart to PNG
+
+---
+
+### Super Bonus Features
+- [ ] Реализовано адекватное отображение для большего количества данных (6 месяцев)
+- [ ] Fullscreen mode
+
+---
+
 ### Preview:
 <img width="757" height="449" alt="изображение" src="https://github.com/user-attachments/assets/a051d467-8b9e-4960-8e90-d0253cc8721f" />
 <img width="757" height="444" alt="изображение" src="https://github.com/user-attachments/assets/7a730c36-d948-423f-8746-cdce59808368" />
 
+Видео демонстрация работы:
 
 
 
+---
 
 Также вот, как это выглядит, если данных больше (здесь я нагенерировала данные на 6 месяцев)
 <img width="740" height="451" alt="изображение" src="https://github.com/user-attachments/assets/81473217-b437-483d-b732-b0e939872e34" />
-Видео демонстрация для большого отрезка данных:
-https://github.com/user-attachments/assets/d85aa3ed-a256-47cc-901b-9a290d9ebf80
+
+<img width="759" height="542" alt="изображение" src="https://github.com/user-attachments/assets/5792b626-9b3e-49a0-ac4b-19552790ba55" />
+
+<img width="750" height="562" alt="изображение" src="https://github.com/user-attachments/assets/a4d50ff4-5303-403f-a0ed-f9af79a020b6" />
+
+<img width="755" height="602" alt="изображение" src="https://github.com/user-attachments/assets/9e9bd9e5-b8b5-4b95-9870-399c8dc540d7" />
+
 
 
