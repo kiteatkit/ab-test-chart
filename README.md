@@ -33,46 +33,50 @@ http://localhost:5173
 ---
 
 ### Core Features
-- [ ] *Multiple variation comparison* - display and compare multiple A/B test variations simultaneously
-- [ ] *Time range switching* - toggle between daily and weekly data aggregation
-- [ ] *Interactive legend* - click to show/hide specific variations (minimum one variation always visible)
-- [ ] *Responsive design* - responsive layout that adapts to different screen sizes
-
----
+- [x] *Multiple variation comparison* 
+- [x] *Time range switching* 
+- [x] *Interactive legend* 
+- [x] *Responsive design*
 
 ### Bonus Features
 
-- [ ] Zoom / Reset zoom
-- [ ] Line style selector (Line, Smooth, Area)
-- [ ] Light / Dark theme toggle
-- [ ] Export chart to PNG
+- [x] Zoom / Reset zoom
+- [x] Line style selector (Line, Smooth, Area)
+- [x] Light / Dark theme toggle
+- [x] Export chart to PNG
 
 ---
 
 ### Super Bonus Features
-- [ ] Реализовано адекватное отображение для большего количества данных (6 месяцев)
-- [ ] Fullscreen mode
+- [x] Implemented display for a larger amount of data 
+- [x] Fullscreen mode
 
 ---
 
 ### Preview:
-<img width="757" height="449" alt="изображение" src="https://github.com/user-attachments/assets/a051d467-8b9e-4960-8e90-d0253cc8721f" />
-<img width="757" height="444" alt="изображение" src="https://github.com/user-attachments/assets/7a730c36-d948-423f-8746-cdce59808368" />
+1. <img width="757" height="449" alt="изображение" src="https://github.com/user-attachments/assets/a051d467-8b9e-4960-8e90-d0253cc8721f" />
+2. <img width="757" height="444" alt="изображение" src="https://github.com/user-attachments/assets/7a730c36-d948-423f-8746-cdce59808368" />
 
-Видео демонстрация работы:
+This is also what the downloaded graphs look like: 
+<img width="1876" height="990" alt="изображение" src="https://github.com/user-attachments/assets/b0477390-7172-4bd6-92ad-dfb09dbd4322" />
 
+
+Video demonstration:
+
+https://github.com/user-attachments/assets/58dd20b8-8da4-4f4c-97cb-b0c74d8bd77b
 
 
 ---
 
-Также вот, как это выглядит, если данных больше (здесь я нагенерировала данные на 6 месяцев)
-<img width="740" height="451" alt="изображение" src="https://github.com/user-attachments/assets/81473217-b437-483d-b732-b0e939872e34" />
+Also, here's what it looks like if there's more data (here I generated data for 6 months)
 
-<img width="759" height="542" alt="изображение" src="https://github.com/user-attachments/assets/5792b626-9b3e-49a0-ac4b-19552790ba55" />
+1. <img width="740" height="451" alt="изображение" src="https://github.com/user-attachments/assets/81473217-b437-483d-b732-b0e939872e34" />
 
-<img width="750" height="562" alt="изображение" src="https://github.com/user-attachments/assets/a4d50ff4-5303-403f-a0ed-f9af79a020b6" />
+2. <img width="759" height="542" alt="изображение" src="https://github.com/user-attachments/assets/5792b626-9b3e-49a0-ac4b-19552790ba55" />
 
-<img width="755" height="602" alt="изображение" src="https://github.com/user-attachments/assets/9e9bd9e5-b8b5-4b95-9870-399c8dc540d7" />
+3. <img width="750" height="562" alt="изображение" src="https://github.com/user-attachments/assets/a4d50ff4-5303-403f-a0ed-f9af79a020b6" />
+
+4. <img width="755" height="602" alt="изображение" src="https://github.com/user-attachments/assets/9e9bd9e5-b8b5-4b95-9870-399c8dc540d7" />
 
 
 
